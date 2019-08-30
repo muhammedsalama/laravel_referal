@@ -15,6 +15,7 @@ class CreateRefLevelsTable extends Migration
     {
         Schema::create('ref__levels', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
             $table->timestamps();
         });
     }

@@ -15,6 +15,13 @@ class CreateRefCategoriesTable extends Migration
     {
         Schema::create('ref__categories', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->longText('desc')->nullable();
+            $table->string('reward')->nullable();
+            $table->string('congratulatory_message')->nullable();
+            $table->integer('target_no_referrals')->nullable();
+            $table->integer('points_per_referral')->nullable();
+
             $table->timestamps();
         });
     }
