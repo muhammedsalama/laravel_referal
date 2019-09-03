@@ -33,3 +33,7 @@ Route::resource('users', 'UserController');
 Route::resource('roles', 'RoleController');
 
 Route::resource('roles', 'RoleController');
+
+Route::resource('refLevels', 'Ref_LevelController');
+
+Route::resource('refCategories', 'Ref_CategoryController');
