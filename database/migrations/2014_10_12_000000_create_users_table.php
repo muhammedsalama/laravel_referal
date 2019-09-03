@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->integer('ref_level_id')->nullable();
             $table->integer('role_id')->nullable();
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

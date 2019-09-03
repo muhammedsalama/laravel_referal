@@ -21,6 +21,8 @@ class CreateRefCategoriesTable extends Migration
             $table->string('congratulatory_message')->nullable();
             $table->integer('target_no_referrals')->nullable();
             $table->integer('points_per_referral')->nullable();
+            $table->softDeletes();
+
 
             $table->timestamps();
         });
